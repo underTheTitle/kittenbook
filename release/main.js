@@ -12,5 +12,8 @@ var currentTime = currentDate.getFullYear() + '-' + // year
 
 var userName = prompt('Hello, what\'s your name??');
 document.body.innerHTML = '<h1>Hello, ' + userName + '!</h1>' + 
-		'<p>' + projectName + ' ' + versionNumber + 
-		' accessed on: ' + currentTime + '</p>';
+		'<p>' + kbValues.projectName + ' ' + 
+		kbValues.versionNumber + 
+		' viewed on: ' + kbValues.currentTime + '</p>';
+
+var images = document.querySelectorAll('li.tl_default img');
